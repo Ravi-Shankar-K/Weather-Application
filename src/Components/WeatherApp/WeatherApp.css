@@ -1,0 +1,282 @@
+
+.container {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container .top-bar {
+    position: fixed;
+    width: 90%;
+    top: 0;
+    padding: 5px 5%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(250,250,250);
+    border-bottom: 2px solid #ccc;
+    box-shadow: 0px 1px 6px 0 #ccc;
+    z-index: 10;
+}
+.container .top-bar .Company {
+    width: 210px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: rgb(89, 203, 201);
+}
+.container .top-bar .Company img {
+    width: 18%;
+    height: 18%;
+}
+.container .top-bar .search {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+    height: 35px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+}
+.container .top-bar .city-input {
+    font-size: 16px;
+    outline: none;
+    background: none;
+    border: none;
+}
+.container .top-bar img {
+    cursor: pointer;
+    width: 90%;
+    height: 90%;
+}
+.container .container-body {
+    margin-top: 120px;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container .container-body .left {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container .container-body .left .box1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+.bg-img{
+    background-image: url('/src/Components/Assets/bg.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    filter: brightness(0.8);
+    z-index: 0;
+}
+.container .container-body .left .box1 .weather-details,
+.container .container-body .left .box1 .weather-conditions {
+    width: 45%;
+    height: 260px;
+}
+.container .container-body .left .box1 .weather-details {
+    padding: 15px;
+    text-align: left;
+}
+.container .container-body .left .box1 .weather-details .temperature-data{
+    display: flex;
+    align-items: center;
+}
+.container .container-body .left .box1 .weather-conditions {
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* border: 2px solid #ccc; */
+    /* border-radius: 10px; */
+}
+@media screen and (max-width:660px) {
+    .container .container-body .left .box1 {
+        flex-direction: column;
+    }
+    .container .container-body .left .box1 .weather-details,
+    .container .container-body .left .box1 .weather-conditions {
+        width: 90%;
+    }
+}
+.container .container-body .left .box1 .weather-conditions .division {
+    width: 45%;
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container .container-body .left .box1 .weather-conditions .division .condition{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.container .container-body .left .box1 .weather-conditions .division .condition .condition-logo {
+    width: 20%;
+}
+.container .container-body .left .box1 .weather-conditions .division .condition .condition-name {
+    width: 60%;
+    margin: 0;
+}
+.container .container-body .left .box1 .weather-conditions .division .condition-value {
+    margin: 0;
+} 
+
+.container .container-body .left .box2 {
+    width: 90%;
+    padding: 2% 5%;
+    margin: 50px 0;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+}
+
+.container .container-body .left .box2-data {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.container .container-body .left .box2 h4{
+    display: flex;
+}
+.container .container-body .left .box2-data .division {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.container .container-body .left .box2 .weather-forecast-specifictime {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+@media screen and (max-width:500px) {
+    .container .container-body .left .box2 .weather-forecast-specifictime {
+        flex-wrap: wrap;
+    }
+}
+.container .container-body .left .box2 .weather-forecast-specifictime .weather-forecast-st-card {
+    width: 100px;
+    height: 200px;
+}
+/* skeleton component */
+
+.sub-heading,
+.sub-heading2,
+.paragraph,
+.paragraph20,
+.sub-heading-circle,
+.sub-heading-circle2
+ {
+    background-color: #ccc;
+    border-radius: 5px;
+}
+.sub-heading {
+    width: 50%;
+    height: 2rem;
+}
+.sub-heading2 {
+    margin: 0px;
+    width: 50%;
+    height: 20px;
+}
+.paragraph {
+    margin: 10px 0;
+    width: 80%;
+    height: 1rem;
+}
+.paragraph20 {
+    width: 20%;
+    height: 1rem;
+}
+.sub-heading-circle {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+}
+.sub-heading-circle2 {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+}
+.margin-right-5 {
+    margin-right: 5%;
+}
+.margin-bottom-5 {
+    margin-bottom: 5%;
+}
+
+.division-container {
+    width: 100%;
+    height: 100%;
+    background-color: #e1dfdf;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient( to right, rgb(143, 142, 141) 0%, rgb(175, 169, 164) 50%, rgb(143, 142, 141) 100%) 0 0 /  200% 100%   rgb(243, 242, 241);
+    margin: 1em;
+    animation: linearAnim 1.5s infinite linear;
+}
+
+@keyframes linearAnim {
+ 
+    100% {
+      background-position: -200% 0;
+    }
+  }
+.table{
+    width: 90%;
+    padding: 1% 5%;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+}
+.table h4{
+    display: flex;
+}
+.table .table-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ccc;
+}
+.table .table-row .img-txt-box {
+    width: 25%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/* skeleton component end */
+@media screen and (min-width:1100px) {
+    .container .container-body{
+        flex-direction: row;
+    }
+    .container .container-body .table{
+        padding: 2.5% 5%;
+        margin-left: 5%;
+    }
+}
+.footer {
+    margin-top: 50px;
+    padding: 1% 5%;
+    color: #c0bdbd;
+    background-color: #636262;
+}
